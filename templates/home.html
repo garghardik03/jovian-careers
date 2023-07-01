@@ -8,16 +8,17 @@
     <style>
         #banner{
             height: 360px;
-            width: 100%;
+            width: 110%;
             object-fit: cover;
+            margin-bottom:16px;
         }
     </style>
 </head>
 <body>
+    {% include 'nav.html' %}
+    <img class="img-fluid" id="banner" src="https://jovian-careers--hardikgarg8.repl.co/static/download.jpeg">
     <div class="container">
     <h1 class="text-center mt-2 mb-4">Jovian Careers</h1>
-    <img class="img-fluid" id="banner" src="https://jovian-careers--hardikgarg8.repl.co/static/download.jpeg" alt="Jovian Careers">
-    <h2 class="text-center mt-2 mb-4">About Jovian</h2>
     <p class="lead">Jovian is a place for people looking for growth in their careers.</p>
     <h2 class="text-center mt-2 mb-4">Open Positions</h2>
     <div style="margin-bottom: 16px;">
@@ -28,10 +29,10 @@
         {% endfor %}
     </div>
     <div class="text-center">
-    <button class="btn btn-primary btn-lg">Contact us</button>
-    <p class="mt-4"> Copyright 2023</p>
+    <a href="mailto: hello@jovian.ai?subject=Issue Occurred" class="btn btn-primary btn-lg">Contact us</a>
     </div>
     </div>
+  {% include 'footer.html' %}
 </body>
 </html>
 
