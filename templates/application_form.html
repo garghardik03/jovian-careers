@@ -1,0 +1,12 @@
+<h4 class="mb-4">Application Form</h4>
+<form action="/job/{{job['title']}}/apply" method="post">
+    <input class="mb-4" in type="text" name="First Name" placeholder="First Name" required><br>
+    <input class="mb-4" in type="text" name="Last Name" placeholder="Last Name" required><br>
+    <input class="mb-4" in type="email" name="Email" placeholder="Email" required><br>
+    <input class="mb-4" in type="text" name="Phone Number" placeholder="Phone Number" required><br>
+    <input class="mb-4" in type="url" name="LinkedIn Profile" placeholder="LinkedIn Profile"><br>
+    <textarea class="mb-4" name="Education" placeholder="Education" ></textarea><br>
+    <textarea class="mb-4" name="Experience" placeholder="Experience" required></textarea><br>
+    <input class="mb-4" in type="text" name="Resume Url" placeholder="Resume" required><br>
+    <input type="submit" value="Submit" class="btn btn-outline-primary float-right align-middle text-center">
+</form>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{job.title}}-Jovian Careers</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    banner{
+        margin-up: 70px;
+        height: 360px;
+        width: 110%;
+        object-fit: cover;
+    }
+</head>
+<body>
+    {% include 'nav.html' %}
+    <style>
+        #banner{
+            height: 360px;
+            width: 110%;
+            object-fit: cover;
+            margin-bottom:16px;
+        }
+    </style>
+    <img class="img-fluid" id="banner" src="https://jovian-careers--hardikgarg8.repl.co/static/download.jpeg">
+    <div class="container">
+        <h1 class="text-center mt-2 mb-4">Jovian Careers</h1>
+    <h3 class="mb-4">{{job.title}}</h3>
+    <h4 class="mb-4">Location: {{job.Location}}</h4>
+    <h4>Salary: {{job.Currency}}{{job.Salary}}</h4>\
+    {% include 'application_form.html' %}
+    </div>
+    {% include 'footer.html' %}
+</body> 
+
+</html>
